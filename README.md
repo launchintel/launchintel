@@ -12,10 +12,11 @@ module. Installing this skill alone does not provide the paid package or grant a
 
 ## Install
 
-You need Claude Code, Git and a GitHub account. The private package also needs Node 20 or newer
-and a browser Claude can control; its setup guide explains the options.
+You need Claude Code, Git, Node 20 or newer and a GitHub account. The private package also needs
+a browser Claude can control; its setup guide explains the options.
 
-After accepting the private repository invitation, install the public skill:
+Install the public skill whenever you like; using the paid workflows requires purchasing access
+and accepting the private repository invitation:
 
 ```bash
 git clone https://github.com/YOUR_ORG/launchintel.git ~/.claude/skills/launchintel
@@ -30,6 +31,15 @@ Claude finds your existing private clone or helps clone it using your GitHub aut
 then loads the workflow from there. You approve the product facts and queue before submissions
 begin. In the paid workflow, you can exclude badges and choose whether blockers should wait for
 your help or be deferred while Claude continues.
+
+To inspect an existing private clone without logging in, changing files or running a workflow:
+
+```bash
+node ~/.claude/skills/launchintel/scripts/inspect-package.mjs /path/to/launchintel-pro
+```
+
+The check lists the installed modules and their private entrypoints. It does not print customer
+run data. An unsupported package version or unsafe path stops setup before any workflow is read.
 
 Authentication happens through your Git tools. Never paste passwords, tokens or keys into chat.
 An access error can mean an unaccepted invitation or the wrong GitHub account; it does not
@@ -59,6 +69,7 @@ time, so paid changes do not need to be copied into this public repo.
 
 Before the first public push, replace `YOUR_ORG` above and set `private_repository` in
 `launchintel.json` to the real private GitHub URL. Run `node scripts/check-public.mjs --release`.
-The check limits this repo to the public files listed in the checker. Do not copy the paid repo
+Run `node --test tests/*.test.mjs` to check the installer against synthetic fixtures.
+The release check limits this repo to the public files listed in the checker. Do not copy the paid repo
 or its Git history here. Repository visibility and any software licence are separate decisions;
 the paid package remains subject to its purchase terms.
