@@ -72,6 +72,10 @@ The official repositories are `launchintel/launchintel` (this public installer) 
 `launchintel/launchintel-pro` (the private paid package). Before publishing, run
 `node scripts/check-public.mjs --release`.
 Run `node --test tests/*.test.mjs` to check the installer against synthetic fixtures.
-The release check limits this repo to the public files listed in the checker. Do not copy the paid repo
+The release check limits this repo to reviewed public paths and checks every locally reachable
+commit for unexpected paths or symlinks, including files later deleted. It does not prove that
+all text inside allowed files is suitable for publication; review content and screenshots too.
+If it reports private history, stop before pushing and inspect the affected commit. Deleting the
+current file does not remove its history. Do not copy the paid repo
 or its Git history here. Repository visibility and any software licence are separate decisions;
 the paid package remains subject to its purchase terms.
