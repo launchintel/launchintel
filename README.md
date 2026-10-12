@@ -50,7 +50,8 @@ necessarily mean you need to purchase again.
 
 This skill, installation instructions and the example screenshot. The paid guides, directory
 data, detailed workflow instructions and dashboard code are kept in a separate private repo.
-Your product details, accounts and submission history stay on your own machine.
+Your local run files and credentials are not uploaded to this public repo. During an approved
+submission, Claude sends the required product details to the directory you selected.
 
 You can use this public repo for setup issues and feature requests. Do not attach private
 playbooks, customer data, credentials or order details to public issues.

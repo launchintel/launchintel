@@ -18,8 +18,9 @@ instructions, catalog or dashboard implementation.
    folder the customer chooses, normally `launchintel-pro`, using their existing GitHub login.
    Do not request passwords, tokens or private keys in chat. If their environment needs approval
    for Git authentication, show the exact clone command for them to run themselves.
-3. A failed clone is not proof of nonpayment: check that the customer accepted the repository
-   invitation and is using the GitHub account that received access. If they have not purchased,
+3. A failed clone is not proof of nonpayment: check that the customer connected GitHub through
+   the Polar customer portal, accepted the repository invitation and is using the GitHub account
+   that received access. If they have not purchased,
    direct them to the website from the public configuration. Do not simulate the paid workflow
    or fabricate its instructions when the private package is unavailable.
 4. Run this public skill's read-only check before loading private instructions:
