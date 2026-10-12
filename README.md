@@ -19,7 +19,7 @@ Install the public skill whenever you like; using the paid workflows requires pu
 and accepting the private repository invitation:
 
 ```bash
-git clone https://github.com/YOUR_ORG/launchintel.git ~/.claude/skills/launchintel
+git clone https://github.com/launchintel/launchintel.git ~/.claude/skills/launchintel
 ```
 
 If that destination already exists, inspect it before updating; do not overwrite it.
@@ -67,8 +67,9 @@ time, so paid changes do not need to be copied into this public repo.
 
 ## Publishing this repo
 
-Before the first public push, replace `YOUR_ORG` above and set `private_repository` in
-`launchintel.json` to the real private GitHub URL. Run `node scripts/check-public.mjs --release`.
+The official repositories are `launchintel/launchintel` (this public installer) and
+`launchintel/launchintel-pro` (the private paid package). Before publishing, run
+`node scripts/check-public.mjs --release`.
 Run `node --test tests/*.test.mjs` to check the installer against synthetic fixtures.
 The release check limits this repo to the public files listed in the checker. Do not copy the paid repo
 or its Git history here. Repository visibility and any software licence are separate decisions;

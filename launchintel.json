@@ -3,5 +3,5 @@
   "kind": "launcher",
   "product": "LaunchIntel",
   "website": "https://launchintel.dev",
-  "private_repository": null
+  "private_repository": "https://github.com/launchintel/launchintel-pro.git"
 }
