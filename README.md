@@ -16,7 +16,8 @@ You need Claude Code, Git, Node 20 or newer and a GitHub account. The private pa
 a browser Claude can control; its setup guide explains the options.
 
 Install the public skill whenever you like; using the paid workflows requires purchasing access
-and accepting the private repository invitation:
+and connecting your GitHub account through Polar’s customer portal, then accepting the private
+repository invitation. The portal link is in your Polar order confirmation:
 
 ```bash
 git clone https://github.com/launchintel/launchintel.git ~/.claude/skills/launchintel
