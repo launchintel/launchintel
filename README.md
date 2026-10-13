@@ -1,4 +1,4 @@
-# LaunchIntel
+# <img src="assets/logo.svg" width="36" height="36" alt=""> LaunchIntel
 
 Let Claude work through your product's launch, with tested playbooks and a local dashboard.
 
@@ -8,7 +8,12 @@ module. Installing this skill alone does not provide the paid package or grant a
 
 [See the product and a sample guide](https://launchintel.dev)
 
-![Dashboard with example product data](assets/dashboard.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dashboard-dark.png">
+  <img alt="LaunchIntel dashboard with fictional demo products and example progress" src="assets/dashboard.png">
+</picture>
+
+*The working dashboard with fictional demo products and example progress.*
 
 ## Install
 
@@ -33,6 +38,17 @@ then loads the workflow from there. You approve the product facts and queue befo
 begin. In the paid workflow, you can exclude badges and choose whether blockers should wait for
 your help or be deferred while Claude continues.
 
+To open your dashboard, say:
+
+> Open my LaunchIntel dashboard.
+
+Switch products, edit their briefs and permissions, review blockers and prepare queues in the
+browser. Light and dark themes are included. Optional Ahrefs Domain Rating tracking records
+measurements locally, with daily checks only if you enable them. Your agent handles setup.
+
+<details>
+<summary>Manual package inspection</summary>
+
 To inspect an existing private clone without logging in, changing files or running a workflow:
 
 ```bash
@@ -42,13 +58,15 @@ node ~/.claude/skills/launchintel/scripts/inspect-package.mjs /path/to/launchint
 The check lists the installed modules and their private entrypoints. It does not print customer
 run data. An unsupported package version or unsafe path stops setup before any workflow is read.
 
+</details>
+
 Authentication happens through your Git tools. Never paste passwords, tokens or keys into chat.
 An access error can mean an unaccepted invitation or the wrong GitHub account; it does not
 necessarily mean you need to purchase again.
 
 ## What is public
 
-This skill, installation instructions and the example screenshot. The paid guides, directory
+This skill, installation instructions, the brand mark and demo screenshots. The paid guides, directory
 data, detailed workflow instructions and dashboard code are kept in a separate private repo.
 Your local run files and credentials are not uploaded to this public repo. During an approved
 submission, Claude sends the required product details to the directory you selected.
@@ -58,11 +76,19 @@ playbooks, customer data, credentials or order details to public issues.
 
 ## Updates
 
+Ask Claude to update LaunchIntel. It follows the paid package's update procedure and keeps your
+product files separate from shipped code.
+
+<details>
+<summary>Manual public skill update</summary>
+
 With a clean public skill checkout, run:
 
 ```bash
 git -C ~/.claude/skills/launchintel pull --ff-only
 ```
+
+</details>
 
 Update the paid package using its own README. Its workflow is read from the private clone each
 time, so paid changes do not need to be copied into this public repo.

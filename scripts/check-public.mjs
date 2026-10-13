@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 // Changing this list requires reviewing the added material for public distribution.
-const allowed = new Set([".gitignore", "AGENTS.md", "README.md", "SKILL.md", "launchintel.json", "scripts/check-public.mjs", "scripts/inspect-package.mjs", "tests/inspect-package.test.mjs", "tests/check-public.test.mjs", "assets/dashboard.png"]);
+const allowed = new Set([".gitignore", "AGENTS.md", "README.md", "SKILL.md", "launchintel.json", "scripts/check-public.mjs", "scripts/inspect-package.mjs", "tests/inspect-package.test.mjs", "tests/check-public.test.mjs", "assets/dashboard.png", "assets/dashboard-dark.png", "assets/logo.svg"]);
 const seen = new Set();
 function walk(relative = "") {
   for (const name of readdirSync(join(root, relative))) {
