@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="LaunchIntel">
   <title>LaunchIntel</title>
-  <rect width="64" height="64" rx="14" fill="#1f3a5f"/>
-  <path d="M18 14h10v26h8V26h10v24H18Z" fill="#ffffff"/>
-  <circle cx="41" cy="17" r="5" fill="#e39b1a"/>
+  <rect width="64" height="64" rx="4" fill="#4f78a3"/>
+  <path fill="#ffffff" d="M17 25l10-10v24h20v10H17Z"/>
 </svg>
