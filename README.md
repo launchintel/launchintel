@@ -1,12 +1,12 @@
 # <img src="assets/logo.svg" width="36" height="36" alt=""> LaunchIntel
 
-**Let Claude handle directory submissions. Follow every product in one dashboard.**
+**Let your agent handle directory submissions. Follow every product in one dashboard.**
 
-LaunchIntel gives Claude tested playbooks for submitting your product to launch and product
-directories. You choose the product, approve the queue and decide when Claude should ask for help.
+LaunchIntel gives your agent tested playbooks for submitting your product to launch and product
+directories. You choose the product, approve the queue and decide when the agent should ask for help.
 The dashboard keeps submissions, live listings and blockers in view.
 
-[Explore LaunchIntel Pro and read a sample guide](https://launchintel.dev)
+[Explore LaunchIntel Pro](https://launchintel.dev)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/dashboard-dark.png">
@@ -29,20 +29,25 @@ skill alone does not unlock the product.
 
 ## Get started
 
-You need Claude Code, Git, Node 20+ and a GitHub account. Claude also needs a browser it can
-control; the private package walks you through setup.
+Submission workflows have been tested with **Claude Code and Codex**. You need Git, Node 20+
+and a GitHub account, plus an agent with local file, terminal and browser access. The private
+package walks you through browser setup.
+
+Using Gemini CLI, Cursor, Windsurf or GitHub Copilot? Those submission workflows have not been
+verified yet. Reading a skill file alone is not enough: your agent must also be able to run
+the local tools and control a browser.
 
 1. Get LaunchIntel Pro from [launchintel.dev](https://launchintel.dev).
 2. Open the Polar customer portal from your order confirmation, connect GitHub and accept the private repository invitation.
-3. Give Claude Code this request:
+3. Give your agent this request:
 
 > Install the LaunchIntel skill from https://github.com/launchintel/launchintel, then open my LaunchIntel dashboard.
 
-Claude sets up the public skill, locates or helps clone your private package, and opens the
+Your agent sets up the public skill, locates or helps clone your private package, and opens the
 local dashboard. Add your product and review its facts and submission queue before work begins.
 
 <details>
-<summary>Prefer to install the skill yourself?</summary>
+<summary>Manual installation for Claude Code</summary>
 
 Run this once in your terminal:
 
@@ -65,7 +70,7 @@ Claude Code session and say **“Open my LaunchIntel dashboard.”**
 
 > Update LaunchIntel, keeping my product files and progress.
 
-The dashboard runs on your computer. Claude uses your approved product details for submissions
+The dashboard runs on your computer. Your agent uses your approved product details for submissions
 and saves progress locally. The public repository receives none of your run files or credentials.
 
 ## Help
